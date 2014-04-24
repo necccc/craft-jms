@@ -1,2 +1,1 @@
-craft-jms
-=========
+# slides of my talk on Craft conf 2014

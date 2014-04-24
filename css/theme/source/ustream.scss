@@ -1,0 +1,151 @@
+/**
+ * Default theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+// Include theme-specific fonts
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800,700);
+//@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,900);
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:300,500,700);
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Roboto', sans-serif;
+$mainColor: #fff;
+$mainFontWeight: 200;
+$headingFont: 'Roboto', Impact, sans-serif;
+$headingColor: #fff;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$headingLineHeight: 1.4em;
+$backgroundColor: #303030;
+$linkColor: #a3cc14;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: #ffb400;
+
+
+.reveal section .font-code {
+  font-family: 'Source Code Pro', Courier, sans-serif;
+  font-weight: 300;
+}
+
+.reveal {
+  font-weight: $mainFontWeight;
+}
+
+.reveal h1 {
+  font-weight: 300;
+}
+
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+	font-weight: 100;
+}
+
+.reveal p {
+	line-height: 1.4em;
+}
+
+.reveal .dark-foreground {
+	color: #2c3c4c;
+}
+
+
+.reveal .dark-foreground h1,
+.reveal .dark-foreground h2, 
+.reveal .dark-foreground h3 {
+	color: #2c3c4c;
+}
+
+.reveal .bottom-bar {
+  position: fixed;
+  height: 36px;
+  width: 100%;
+  bottom: 3px;
+  left: 0;
+  z-index: 11;
+  line-height: .65em;
+  background: rgba(0, 0, 0, 0.06);
+
+  strong, a.bottom-link {
+
+    font-weight: 100;
+    letter-spacing: .07em;
+
+    color: #fff;
+    font-size: .4em;
+    line-height: 2.6em;
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  strong {
+    float: left;
+  }
+  a.bottom-link {
+    float: right;
+  }
+
+  a.bottom-twitter {
+    background-image: url('../../images/twitter.svg');
+    background-size: 16px 16px;
+  }
+
+}
+
+section .part-side {
+  width: 40%;
+  float: left;
+  text-align: left;
+}
+
+section .part-main {
+  width: 60%;
+  float: left;
+}
+
+
+section .part-right {
+  width: 50%;
+  float: right;
+  text-align: left;
+}
+
+section .part-left {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+
+section .part-left h2,
+section .part-left h3,
+section .part-left h4,
+section .part-right h2,
+section .part-right h3,
+section .part-right h4 {
+  text-align: center;
+}
+
+section .part-onethird,
+section .part-twothird,
+section .part-threethird {
+  width: 33%;
+  float: left;
+}
+.reveal pre code {
+  max-height: 500px;
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
