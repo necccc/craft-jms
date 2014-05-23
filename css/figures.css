@@ -83,7 +83,7 @@
 .fig-html {
 	position: relative;
 	z-index: 1;
-	background-color: rgba(51,136,255, .4);
+	background-color: rgba(51,136,255, 1);
 	border-color: #3388ff;
 
 	width: 240px;
@@ -122,7 +122,7 @@
 	z-index: 2;
 	top: 0;
 	left: 0;
-	background-color: rgba(242, 138, 46, .4);
+	background-color: rgba(242, 138, 46, 1);
 	border-color: #f28a2e;
 }
 
@@ -419,7 +419,7 @@
 	width: 380px;
 	height: 240px;
 	top: 120px;
-	background-color: rgba(51,136,255, .2);
+	background-color: rgba(51,136,255, 1);
 
 	-webkit-transform: rotateX(70deg) rotateZ(-30deg);
 	-moz-transform: rotateX(70deg) rotateZ(-30deg);
@@ -434,7 +434,7 @@
 
 	position: absolute;
 	z-index: 1;
-	background-color: rgba(163,204,20, .2);
+	background-color: rgba(163,204,20, 1);
 	border-color: #3388ff;
 
 
@@ -493,7 +493,7 @@
 .asyncloading .fig-js.fig-required,
 .asyncpackage .fig-js.fig-required {
 
-	background-color: rgba(255, 255, 255, .2);
+	background-color: rgba(255, 255, 255, 1);
 
 	-webkit-transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 123px);
 	-moz-transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 123px);
@@ -532,7 +532,7 @@
 .has-deps.fetch-module .asyncloading .fig-js.fig-dep1,
 .has-deps.fetch-module .asyncloading .fig-js.fig-dep2,
 .has-deps.fetch-module .asyncloading .fig-js.fig-module {
-	background-color: rgba(206, 54, 19, .8);
+	background-color: rgba(206, 54, 19, 1);
 }
 
 
@@ -837,7 +837,7 @@
 
 .whichpackage .asyncpackage .fig-package {
 	top: 0;
-	background-color: rgba(150,150,150,.4);
+	background-color: rgba(150,150,150,1);
 	-webkit-transform: rotateX(0deg) rotateZ(0deg) translate(0px, 0px);
 	-moz-transform: rotateX(0deg) rotateZ(0deg) translate(0px, 0px);
 	-o-transform: rotateX(0deg) rotateZ(0deg) translate(0px, 0px);
@@ -1000,7 +1000,7 @@
 	height: 240px;
 	top: 180px;
 	left: 80px;
-	background-color: rgba(51,136,255, .3);
+	background-color: rgba(51,136,255, 1);
 
 	-webkit-transform: rotateX(70deg) rotateZ(-30deg);
 	-moz-transform: rotateX(70deg) rotateZ(-30deg);
@@ -1014,7 +1014,7 @@
 
 	position: absolute;
 	z-index: 1;
-	background-color: rgba(211,73,163, .4);
+	background-color: rgba(211,73,163, 1);
 	border-color: #3388ff;
 
 
@@ -1172,7 +1172,7 @@
 
 }
 .versionhandling .fig-server {
-	background-color: rgba(211,73,163, .4);
+	background-color: rgba(211,73,163, 1);
 	border-color: #3388ff;
 	position: absolute;
 
@@ -1270,7 +1270,7 @@
 .negativeloadingsteptwo .fig-server {
 	width: 480px;
 	height: 340px;
-	background-color: rgba(211,73,163, .4);
+	background-color: rgba(211,73,163, 1);
 	position: absolute;
 	top: -100px;
 	left: 40px;
@@ -1724,7 +1724,7 @@
 .scaling .fig-server {
 	font-size: .8em;
 	position: absolute;
-	background-color: rgba(211,73,163, .6);
+	background-color: rgba(211,73,163, 1);
 	width: 90px;
 	height: 130px;
 	top: 90px;
@@ -1878,10 +1878,10 @@
 }
 .morecache .scaling .fig-cache.cache-1 {
 	top: -70px; opacity: 1;
-	background-color: rgba(0,159,224, .6);
+	background-color: rgba(0,159,224, 1);
 }
 .morecache .scaling .fig-cache.cache-2 {
-	background-color: rgba(145,179,27, .6);
+	background-color: rgba(145,179,27, 1);
 	opacity: 1;
 	top: -140px;
 	transition-delay: 300ms;
@@ -1960,7 +1960,7 @@
 	top: 120px;
 }
 .figures.howitworks .fig-server {
-	background-color: rgba(211,73,163, .6);
+	background-color: rgba(211,73,163, 1);
 	height: 180px;
 	width: 100px;
 	top: 100px;
