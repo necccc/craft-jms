@@ -418,14 +418,12 @@
 .asyncpackage .fig-html {
 	width: 380px;
 	height: 240px;
-	top: 120px;
+	top: 174px;
+	left: 16px;
 	background-color: rgba(51,136,255, 1);
 
-	-webkit-transform: rotateX(70deg) rotateZ(-30deg);
-	-moz-transform: rotateX(70deg) rotateZ(-30deg);
-	-o-transform: rotateX(70deg) rotateZ(-30deg);
-	-ms-transform: rotateX(70deg) rotateZ(-30deg);
-	transform: rotateX(70deg) rotateZ(-30deg);
+	-webkit-transform: rotateX(20deg) rotateZ(-16deg) rotateY(20deg);
+	transform: rotateX(20deg) rotateZ(-16deg) rotateY(20deg);
 }
 
 
@@ -443,11 +441,8 @@
 	top: -80px;
 	left: 5px;
 
-	-webkit-transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg);
-	-moz-transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg);
-	-o-transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg);
-	-ms-transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg);
-	transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg);
+	-webkit-transform: rotateX(-20deg) rotateZ(8deg) rotateY(33deg);
+	transform: rotateX(-20deg) rotateZ(8deg) rotateY(33deg);
 }
 
 
@@ -459,11 +454,8 @@
 	height: 180px;
 	top: 32px;
 
-	-webkit-transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg) translate(0px, -130px);
-	-moz-transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg) translate(0px, -130px);
-	-o-transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg) translate(0px, -130px);
-	-ms-transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg) translate(0px, -130px);
-	transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg) translate(0px, -130px);
+	-webkit-transform: rotateX(-20deg) rotateZ(8deg) rotateY(33deg) translate3d(0px, -110px,70px);
+	transform: rotateX(-20deg) rotateZ(8deg) rotateY(33deg) translate3d(0px, -110px,70px);
 }
 
 .asyncloading .fig-js.fig-dep1 {
@@ -471,22 +463,16 @@
 	height: 100px;
 	top: 80px;
 
-	-webkit-transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg) translate(80px, -180px);
-	-moz-transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg) translate(80px, -180px);
-	-o-transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg) translate(80px, -180px);
-	-ms-transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg) translate(80px, -180px);
-	transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg) translate(80px, -180px);
+	-webkit-transform: rotateX(-20deg) rotateZ(8deg) rotateY(33deg) translate3d(80px, -160px, 70px);
+	transform: rotateX(-20deg) rotateZ(8deg) rotateY(33deg) translate3d(80px, -160px, 70px);
 }
 .asyncloading .fig-js.fig-dep2 {
 
 	height: 100px;
 	top: 80px;
 
-	-webkit-transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg) translate(160px, -180px);
-	-moz-transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg) translate(160px, -180px);
-	-o-transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg) translate(160px, -180px);
-	-ms-transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg) translate(160px, -180px);
-	transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg) translate(160px, -180px);
+	-webkit-transform: rotateX(-20deg) rotateZ(8deg) rotateY(33deg) translate3d(160px, -160px, 70px);
+	transform: rotateX(-20deg) rotateZ(8deg) rotateY(33deg) translate3d(160px, -160px, 70px);
 }
 
 
@@ -495,11 +481,8 @@
 
 	background-color: rgba(255, 255, 255, 1);
 
-	-webkit-transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 123px);
-	-moz-transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 123px);
-	-o-transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 123px);
-	-ms-transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 123px);
-	transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 123px);
+	-webkit-transform: rotateX(46deg) rotateZ(-30deg) rotateY(19deg) translate3d(10px, 90px, 80px);
+	transform: rotateX(46deg) rotateZ(-30deg) rotateY(19deg) translate3d(10px, 90px, 80px);
 
 	opacity: 0;
 	top: 148px;
@@ -507,21 +490,14 @@
 
 .do-require .asyncloading .fig-js.fig-required,
 .do-require .asyncpackage .fig-js.fig-required {
-	-webkit-transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 83px);
-	-moz-transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 83px);
-	-o-transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 83px);
-	-ms-transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 83px);
-	transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 83px);
+	-webkit-transform: rotateX(20deg) rotateZ(-16deg) rotateY(20deg) translate3d(10px, 90px, 40px);
+	transform: rotateX(20deg) rotateZ(-16deg) rotateY(20deg) translate3d(10px, 90px, 40px);
 	opacity: 1;
 }
 
 .fetch-module .asyncloading .fig-js.fig-module {
-
-	-webkit-transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 85px);
-	-moz-transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 85px);
-	-o-transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 85px);
-	-ms-transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 85px);
-	transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 85px);
+	-webkit-transform: rotateX(20deg) rotateZ(-16deg) rotateY(20deg) translate3d(20px, 100px, 80px);
+	transform: rotateX(20deg) rotateZ(-16deg) rotateY(20deg) translate3d(20px, 100px, 80px);
 	top: 148px;
 }
 
@@ -537,19 +513,13 @@
 
 
 .wait-deps .asyncloading .fig-js.fig-dep1 {
-	-webkit-transform: rotateX(70deg) rotateZ(-30deg) translate(85px, 135px);
-	-moz-transform: rotateX(70deg) rotateZ(-30deg) translate(85px, 135px);
-	-o-transform: rotateX(70deg) rotateZ(-30deg) translate(85px, 135px);
-	-ms-transform: rotateX(70deg) rotateZ(-30deg) translate(85px, 135px);
-	transform: rotateX(70deg) rotateZ(-30deg) translate(85px, 135px);
+	-webkit-transform: rotateX(20deg) rotateZ(-16deg) rotateY(20deg) translate3d(100px, 102px, 80px);
+	transform: rotateX(20deg) rotateZ(-16deg) rotateY(20deg) translate3d(100px, 102px, 80px);
 	top: 148px;
 }
 .wait-deps .asyncloading .fig-js.fig-dep2 {
-	-webkit-transform: rotateX(70deg) rotateZ(-30deg) translate(167px, 135px);
-	-moz-transform: rotateX(70deg) rotateZ(-30deg) translate(167px, 135px);
-	-o-transform: rotateX(70deg) rotateZ(-30deg) translate(167px, 135px);
-	-ms-transform: rotateX(70deg) rotateZ(-30deg) translate(167px, 135px);
-	transform: rotateX(70deg) rotateZ(-30deg) translate(167px, 135px);
+	-webkit-transform: rotateX(20deg) rotateZ(-16deg) rotateY(20deg) translate3d(184px, 102px, 80px);
+	transform: rotateX(20deg) rotateZ(-16deg) rotateY(20deg) translate3d(184px, 102px, 80px);
 	transition-delay: 100ms;
 	top: 148px;
 }
@@ -572,9 +542,6 @@
 .dependencygraph .fig-js {
 	position: absolute;
 	-webkit-transform: rotateX(0deg) rotateZ(0deg) translate(0px, 0px);
-	-moz-transform: rotateX(0deg) rotateZ(0deg) translate(0px, 0px);
-	-o-transform: rotateX(0deg) rotateZ(0deg) translate(0px, 0px);
-	-ms-transform: rotateX(0deg) rotateZ(0deg) translate(0px, 0px);
 	transform: rotateX(0deg) rotateZ(0deg) translate(0px, 0px);
 
 	top: 380px;
@@ -727,6 +694,167 @@
 .waterfall.transdeps .dependencygraph .fig-js.fig-module {
 	top: 100%;
 }
+
+
+
+
+
+
+.dep-graph .deppaths .fig-js.fig-dep1,
+.dep-graph.deppaths .fig-js.fig-dep1 {
+	top: 240px;
+	left: 450px;
+}
+
+.dep-graph .deppaths .fig-js.fig-dep3,
+.dep-graph.deppaths .fig-js.fig-dep3 {
+	top: 380px;
+	left: 520px;
+}
+
+
+
+
+.dep-graph .deppaths .fig-js.fig-dep22,
+.dep-graph.deppaths .fig-js.fig-dep22 {
+	top: 240px;
+	left: 310px;
+}
+
+.dep-graph .dependencygraph .fig-js.fig-dep52,
+.dep-graph.dependencygraph .fig-js.fig-dep52 {
+	top: 100px;
+	left: 240px;
+}
+
+.dep-graph .deppaths .fig-js.fig-dep6,
+.dep-graph.deppaths .fig-js.fig-dep6,
+.dep-graph .deppaths .fig-js.fig-dep62,
+.dep-graph.deppaths .fig-js.fig-dep62 {
+	top: -40px;
+	left: 170px;
+	-webkit-transition-delay: 0;
+	transition-delay: 0;
+
+	-webkit-transform-origin: center center;
+	transform-origin: center center;
+}
+
+.deppaths .fig-js.fig-module2,
+.deppaths .fig-js.fig-dep22,
+.deppaths .fig-js.fig-dep62,
+.deppaths .fig-js.fig-dep52 {
+	-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(0px, 0px, -1px);
+}
+
+
+
+.deppaths .fig-js.fig-dep2,
+.deppaths .fig-js.fig-dep22 {
+	transition-delay: 350ms;
+}
+
+.deppaths .fig-js.fig-module,
+.deppaths .fig-js.fig-module2 {
+	transition-delay: 650ms;
+}
+
+
+
+
+.deppaths .fig-js small{
+	position: absolute;
+	top: 3px;
+	right: 6px;
+	font-size: .7em;
+}
+
+
+
+.deppaths .svg-arrow1 {
+	top: 334px;
+	left: 202px;
+
+}
+.deppaths .svg-arrow3 {
+	top: 192px;
+	left: 414px;
+
+}
+.deppaths .svg-arrow4 {
+	top: 50px;
+	left: 202px;
+
+}
+.deppaths .svg-arrow5 {
+	top: 334px;
+	left: 486px;
+
+}
+
+
+
+
+@-webkit-keyframes moduleChanges {
+	10% {
+		-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(-10px, 0px, 80px);
+	}
+
+	100% {
+		-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(180deg) translate3d(0px, 0px, -1px);
+	}
+}
+
+
+
+.changes .deppaths .fig-js.fig-dep6 {
+	-webkit-animation: moduleChanges .7s forwards;
+}
+.changes .deppaths .fig-js.fig-dep62 {
+	-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(0px, 0px, 1px);
+}
+
+
+.changes.propagate .deppaths .fig-js.fig-module {
+	-webkit-animation: moduleChanges .7s .65s forwards;
+}
+.changes.propagate .deppaths .fig-js.fig-dep2 {
+	-webkit-animation: moduleChanges .7s .35s forwards;
+}
+
+.changes.propagate .deppaths .fig-js.fig-dep5 {
+	-webkit-animation: moduleChanges .7s forwards;
+}
+
+.changes.propagate .deppaths .fig-js.fig-module2,
+.changes.propagate .deppaths .fig-js.fig-dep22,
+.changes.propagate .deppaths .fig-js.fig-dep52 {
+	-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(0px, 0px, 1px);
+}
+
+
+
+
+
+.deppaths .fig-js.fig-dep4,
+.deppaths .fig-js.fig-dep3,
+.deppaths .fig-js.fig-dep1 {
+	-webkit-transition-delay: 0;
+	transition-delay: 0;
+}
+
+
+
+.affected.changes.propagate .deppaths .fig-js.fig-dep4,
+.affected.changes.propagate .deppaths .fig-js.fig-dep3,
+.affected.changes.propagate .deppaths .fig-js.fig-dep1 {
+	opacity: .4;
+	-webkit-filter: grayscale(80%);
+}
+
+
+
+
 
 
 

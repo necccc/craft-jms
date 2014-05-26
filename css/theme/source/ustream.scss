@@ -44,6 +44,7 @@ a {
 
 .reveal h1 {
   font-weight: 400;
+  text-shadow: none;
 }
 
 .reveal h2,
@@ -84,7 +85,7 @@ a {
     font-weight: 100;
     letter-spacing: .07em;
 
-    color: #fff;
+    color: #000;
     font-size: .4em;
     line-height: 2.6em;
     display: inline-block;
@@ -93,6 +94,7 @@ a {
 
   strong {
     float: left;
+    font-weight: 400;
   }
   a.bottom-link {
     float: right;

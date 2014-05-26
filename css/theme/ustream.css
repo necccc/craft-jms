@@ -16,7 +16,8 @@ a {
   font-weight: 300; }
 
 .reveal h1 {
-  font-weight: 400; }
+  font-weight: 400;
+  text-shadow: none; }
 
 .reveal h2,
 .reveal h3,
@@ -48,13 +49,14 @@ a {
   .reveal .bottom-bar strong, .reveal .bottom-bar a.bottom-link {
     font-weight: 100;
     letter-spacing: .07em;
-    color: #fff;
+    color: #000;
     font-size: .4em;
     line-height: 2.6em;
     display: inline-block;
     padding: 0 10px; }
   .reveal .bottom-bar strong {
-    float: left; }
+    float: left;
+    font-weight: 400; }
   .reveal .bottom-bar a.bottom-link {
     float: right; }
   .reveal .bottom-bar a.bottom-twitter {

@@ -1703,6 +1703,22 @@
 
 
 
+
+                <section data-bottom-title="Repositories">
+
+                    <h2>Multiple repositories</h2>
+
+
+                    <aside class="notes">
+
+
+                        JMS can deploy and serve multiple js codebases
+
+                    </aside>
+
+                </section>
+
+
                 <!--
 
                        ____    _    ____ _   _ _____
@@ -1732,34 +1748,104 @@
 
                     <h3>Unique URLs</h3>
 
-                    <p class="font-code">version /  + modules - modules ? extra-params</p>
-
-                    <p class="fragment"><small>This is actually really bad</small></p>
-
+                    <p class="font-code"> / repository /  + modules - modules ? extra-params</p>
 
                     <aside class="notes">
                         JMS currently serves javascript modules with a unique url
                         <br /><br />
                         Every given url will give back the delta of the required and excluded module dependencies
-                        from a codebase version
+                        from a codebase version in the accessed codebase
                         <br /><br />
                         Extra parameters can be passed along the request, for example a locale, they should not break this behaviour
                         <br /><br />
 
-                        This is actually the biggest weakness of the current version of JMS, as unique urls for modules that have not benn  modified within a version deploy,
-                        still get a new url as a new cache key.
-                        <br />
-                        Fixing and imprioving this, is currently on the top of our todo list.
+                    </aside>
+
+                </section>
 
 
 
 
+                <section data-bottom-title="Cache">
 
+                    <h3>Mtime hashed modulenames</h3>
 
+                    <h4>73ffe257</h4>
+
+                    <ul>
+                        <li>CRC checksum of modulename + modification time</li>
+                        <li>represented in hexa</li>
+                        <li>replaced at every usage</li>
+                    </ul>
+
+                    <aside class="notes">
 
                     </aside>
 
                 </section>
+
+                <section data-bottom-title="Cache" class="dep-graph">
+
+
+
+                    <div class="part-side">
+                        <h3>Changed dependency paths</h3>
+
+                        <ul>
+                            <li class="fragment" data-figure="changes">Module changes</li>
+                            <li class="fragment" data-figure="propagate">Propagates up the dependency graph</li>
+                            <li class="fragment" data-figure="affected">Affected modules only</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="part-main figures dependencygraph deppaths">
+
+                        <div class="fig fig-js fig-module"><span>JS</span></div>
+                        <div class="fig fig-js fig-module2"><span>JS</span><small>v2</small></div>
+
+                        <div class="fig fig-js fig-dep1"><span>JS</span></div>
+
+                        <div class="fig fig-js fig-dep2"><span>JS</span></div>
+                        <div class="fig fig-js fig-dep22"><span>JS</span><small>v2</small></div>
+
+                        <div class="fig fig-js fig-dep3"><span>JS</span></div>
+                        <div class="fig fig-js fig-dep4"><span>JS</span></div>
+
+                        <div class="fig fig-js fig-dep5"><span>JS</span></div>
+                        <div class="fig fig-js fig-dep52"><span>JS</span><small>v2</small></div>
+
+                        <div class="fig fig-js fig-dep6"><span>JS</span></div>
+                        <div class="fig fig-js fig-dep62"><span>JS</span><small>v2</small></div>
+
+                        <div class="svg svg-deparrow svg-arrow1">
+                            <img src="images/fig-deparrow-right.svg" width="132" height="27">
+                        </div>
+                        <div class="svg svg-deparrow svg-arrow2">
+                            <img src="images/fig-deparrow.svg" width="132" height="27">
+                        </div>
+                        <div class="svg svg-deparrow svg-arrow3">
+                            <img src="images/fig-deparrow-left.svg" width="132" height="27">
+                        </div>
+                        <div class="svg svg-deparrow svg-arrow4">
+                            <img src="images/fig-deparrow-left.svg" width="132" height="27">
+                        </div>
+                        <div class="svg svg-deparrow svg-arrow5">
+                            <img src="images/fig-deparrow-left.svg" width="132" height="27">
+                        </div>
+
+                    </div>
+
+
+
+                    <aside class="notes">
+
+                    </aside>
+
+                </section>
+
+
+
                 <section data-bottom-title="Cache">
 
                     <h3>Support Re-Validation</h3>
