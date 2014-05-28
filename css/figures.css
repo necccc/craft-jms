@@ -1,5 +1,8 @@
 
-
+.link-twitter {
+	background-image: url('../../images/twitter.svg');
+	background-size: 16px 16px;
+}
 
 .code-keyword {
 	color: #539eec;
@@ -33,7 +36,7 @@
 .arrow {
 	position: absolute;
 	height: 32px;
-	background-color: #999;
+	background-color: #91b31b;
 }
 
 .arrow.to-right:after,
@@ -41,7 +44,7 @@
 	font-size: 96px;
 	position: absolute;
 	top: -13px;
-	color: #999;
+	color: #91b31b;
 }
 
 .arrow.to-right:after {

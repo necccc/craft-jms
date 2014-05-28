@@ -49,7 +49,7 @@
 					<h1>JavaScript Module Server</h1>
 
 					<p>
-						<small>By <a href="http://github.com/necccc">Szabolcs Szabolcsi-Tóth</a> / <a href="http://twitter.com/_nec">@_Nec</a></small>
+						<small><a href="http://github.com/necccc">Szabolcs Szabolcsi-Tóth</a> <br /><br /> <a href="http://twitter.com/_nec" class="link-twitter">@_Nec</a></small>
 					</p>
 
 				</section>
@@ -1433,60 +1433,6 @@
 
                 </section>
 
-                <section data-bottom-title="The JMS client">
-
-                    <div class="part-main figures versionhandling">
-
-                        <div class="fig fig-server"><span>JMS</span></div>
-
-                        <div class="fig fig-html"><span>HTML</span></div>
-
-                        <div class="fig fig-js fig-jmsc"><span>JMSC v42</span></div>
-
-                        <div class="fig fig-package fig-pak1"><span>v42</span></div>
-                        <div class="fig fig-package fig-pak2"><span>v43</span></div>
-
-                        <div class="arrow to-right"></div>
-
-
-
-                    </div>
-
-                    <div class="part-side">
-                        <h3>Version Handling</h3>
-
-                        <ul >
-
-                            <li class="fragment" data-figure="loadv42">Cliend Init</li>
-                            <li class="fragment" data-figure="bound">Bound to Version</li>
-                            <li class="fragment" data-figure="deploy">Deploy</li>
-                            <li class="fragment" data-figure="remain">Client keeps version</li>
-
-                        </ul>
-                    </div>
-
-
-
-                    <aside class="notes">
-
-                        What happens when we deploy a new version of the codebase?
-                        <br />
-                        The client initializes with the current version of the codebase,
-                        in fact it's bound to that version. Every asynchronous module request after this pageload will address the same version
-                        <br />
-                        If a new version is deployed on the JMS, and becomes the latest version
-                        the client keeps using the old one, until the client is fetched again in a page load
-                        <br />
-                        The JMS can serve a number of old versions, this number is configurable by your needs
-                        <br />
-                        This way we avoid the problem of collindig different versions of the same codebase.
-
-
-
-
-                    </aside>
-
-                </section>
 
 
                 <section data-bottom-title="The JMS client">
@@ -1711,7 +1657,6 @@
 
                     <aside class="notes">
 
-
                         JMS can deploy and serve multiple js codebases
 
                     </aside>
@@ -1731,9 +1676,11 @@
                 -->
 
 
-                <section data-bottom-title="Cache">
+                <section data-bottom-title="Cache & Versioning">
 
-                    <h2>Cache</h2>
+                    <h2>Cache<br />
+                        &<br />
+                        Versioning</h2>
 
 
                     <aside class="notes">
@@ -1744,11 +1691,31 @@
                     </aside>
 
                 </section>
-                <section data-bottom-title="Cache">
+
+
+                <section data-bottom-title="Cache & Versioning">
+
+                    <h3>Unique URLs</h3>
+
+
+                    <p class="font-code"> / repository / <strong>version</strong> /  + modules - modules ? extra-params</p>
+
+                    <p><br/><br/>Very bad</p>
+
+                    <aside class="notes">
+
+                    </aside>
+
+                </section>
+
+
+                <section data-bottom-title="Cache & Versioning">
 
                     <h3>Unique URLs</h3>
 
                     <p class="font-code"> / repository /  + modules - modules ? extra-params</p>
+
+                    <p><br/><br/>Module names has to contain version information </p>
 
                     <aside class="notes">
                         JMS currently serves javascript modules with a unique url
@@ -1765,17 +1732,19 @@
 
 
 
+                <section data-bottom-title="Cache & Versioning">
 
-                <section data-bottom-title="Cache">
+                    <h3>Mtime hashed module names</h3>
 
-                    <h3>Mtime hashed modulenames</h3>
-
-                    <h4>73ffe257</h4>
+                    <h4 class="fragment" data-fragment-index="1">apps/Main + 2014-04-29T11:49:22.000Z</h4>
+                    <h4 class="fragment" data-fragment-index="2">2413570658</h4>
+                    <h4 class="fragment" data-fragment-index="3">8fdc2a62</h4>
 
                     <ul>
-                        <li>CRC checksum of modulename + modification time</li>
-                        <li>represented in hexa</li>
-                        <li>replaced at every usage</li>
+                        <li class="fragment" data-fragment-index="1">Modulename + modification time</li>
+                        <li class="fragment" data-fragment-index="2">CRC checksum </li>
+                        <li class="fragment" data-fragment-index="3">represented in hexa</li>
+                        <li class="fragment" data-fragment-index="4">replaced at <strong>every</strong> usage</li>
                     </ul>
 
                     <aside class="notes">
@@ -1784,7 +1753,7 @@
 
                 </section>
 
-                <section data-bottom-title="Cache" class="dep-graph">
+                <section data-bottom-title="Cache & Versioning" class="dep-graph">
 
 
 
@@ -1846,7 +1815,66 @@
 
 
 
-                <section data-bottom-title="Cache">
+
+                <section data-bottom-title="Cache & Versioning">
+
+                    <div class="part-main figures versionhandling">
+
+                        <div class="fig fig-server"><span>JMS</span></div>
+
+                        <div class="fig fig-html"><span>HTML</span></div>
+
+                        <div class="fig fig-js fig-jmsc"><span>JMSC v42</span></div>
+
+                        <div class="fig fig-package fig-pak1"><span>v42</span></div>
+                        <div class="fig fig-package fig-pak2"><span>v43</span></div>
+
+                        <div class="arrow to-right"></div>
+
+
+
+                    </div>
+
+                    <div class="part-side">
+                        <h3>Version Handling</h3>
+
+                        <ul >
+
+                            <li class="fragment" data-figure="loadv42">Cliend Init</li>
+                            <li class="fragment" data-figure="bound">Bound to Version</li>
+                            <li class="fragment" data-figure="deploy">Deploy</li>
+                            <li class="fragment" data-figure="remain">Client keeps version</li>
+
+                        </ul>
+                    </div>
+
+
+
+                    <aside class="notes">
+
+                        What happens when we deploy a new version of the codebase?
+                        <br />
+                        The client initializes with the current version of the codebase,
+                        in fact it's bound to that version. Every asynchronous module request after this pageload will address the same version
+                        <br />
+                        If a new version is deployed on the JMS, and becomes the latest version
+                        the client keeps using the old one, until the client is fetched again in a page load
+                        <br />
+                        The JMS can serve a number of old versions, this number is configurable by your needs
+                        <br />
+                        This way we avoid the problem of collindig different versions of the same codebase.
+
+
+
+
+                    </aside>
+
+                </section>
+
+
+
+
+                <section data-bottom-title="Cache & Versioning">
 
                     <h3>Support Re-Validation</h3>
 
@@ -2414,7 +2442,6 @@
 
                     <h5>GZip</h5>
                     <h5>Source Maps</h5>
-                    <h5>Cache Strategies</h5>
                     <h5>AMD plugins</h5>
                     <h5>CSS</h5>
                     <h5>SPDY / HTTP2</h5>
@@ -2428,8 +2455,7 @@
                         gzip compression,
                         and addig sourcemaps for debugging
                         <br /><br />
-                        as i've mentioned before, we plan to refine the cache strategies, to be more effective
-                        <br /><br />
+
                         AMD modules themselves can have plugins, supporting templates,
                         or setting extra, module specific directives for JMS during deploy,
                         and more, we plan to handle them as well
@@ -2451,7 +2477,7 @@
                 </section>
                 <section data-bottom-title="Use">
 
-                    <h3><a href="https://github.com/ustream/jms">github.com/ustream/jms</a></h3>
+                    <h3><a href="https://github.com/ustream/jms">github.com / ustream / jms</a></h3>
 
                     <aside class="notes">
 
@@ -2485,7 +2511,7 @@
 
             <div class="bottom-bar">
                 <strong class="bottom-title">JavaScript Module Server</strong>
-                <a class="bottom-link bottom-twitter" href="https://twitter.com/_Nec">@_Nec</a>
+                <a class="bottom-link link-twitter" href="https://twitter.com/_Nec">@_Nec</a>
                 <a class="bottom-link bottom-name">Szabolcs Szabolcsi-Tóth</a>
             </div>
 
