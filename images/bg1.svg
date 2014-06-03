@@ -6,7 +6,7 @@
  xmlns:ev="http://www.w3.org/2001/xml-events" >
 <defs>
 <filter id="Filter_0">
-  <feFlood flood-color="rgb( 36, 36, 36 )" flood-opacity="0.2" result="floodOut" />
+  <feFlood flood-color="rgb( 36, 36, 36 )" flood-opacity="0.08" result="floodOut" />
   <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
   <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
 </filter>

@@ -872,11 +872,9 @@
 	height: 180px;
 	top: 32px;
 
-	-webkit-transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg) translate(0px, -130px);
-	-moz-transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg) translate(0px, -130px);
-	-o-transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg) translate(0px, -130px);
-	-ms-transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg) translate(0px, -130px);
-	transform: rotateX(-45deg) rotateZ(28deg) rotateY(27deg) translate(0px, -130px);
+
+	-webkit-transform: rotateX(-20deg) rotateZ(8deg) rotateY(33deg) translate3d(6px,-105px,36px);
+	transform: rotateX(-20deg) rotateZ(8deg) rotateY(33deg) translate3d(6px,-105px,36px);
 }
 
 .asyncpackage .fig-js.fig-required {
@@ -885,20 +883,14 @@
 
 
 .asyncpackage .fig-package .fig-js {
-	-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(10px, -20px, 0);
-	-moz-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(10px, -20px, 0);
-	-o-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(10px, -20px, 0);
-	-ms-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(10px, -20px, 0);
-	transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(10px, -20px, 0);
+	-webkit-transform: translate(13px,-16px);
+	transform: translate(13px,-16px);
 }
 
 .asyncpackage .fig-package .fig-js.fig-dep1 {
 	height: 70px;
-	-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(80px, -20px, 0);
-	-moz-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(80px, -20px, 0);
-	-o-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(80px, -20px, 0);
-	-ms-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(80px, -20px, 0);
-	transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(80px, -20px, 0);
+	-webkit-transform: translate(83px,-16px);
+	transform: translate(83px,-16px);
 }
 
 .fetch-module.do-require  .asyncpackage .fig-required {
@@ -907,30 +899,19 @@
 
 .fetch-module .asyncpackage .fig-package,
 .fetch-module.asyncpackage .fig-package {
-	-webkit-transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 55px);
-	-moz-transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 55px);
-	-o-transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 55px);
-	-ms-transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 55px);
-	transform: rotateX(70deg) rotateZ(-30deg) translate(0px, 55px);
+	-webkit-transform: rotateX(20deg) rotateZ(-16deg) rotateY(20deg) translate3d(15px,74px,44px);
+	transform: rotateX(20deg) rotateZ(-16deg) rotateY(20deg) translate3d(15px,74px,44px);
 	top: 148px;
 }
 
 .module-available  .asyncpackage .fig-package .fig-js,
 .module-available.asyncpackage .fig-package .fig-js {
-	-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(10px, -20px, 20px);
-	-moz-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(10px, -20px, 20px);
-	-o-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(10px, -20px, 20px);
-	-ms-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(10px, -20px, 20px);
-	transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(10px, -20px, 20px);
+
 }
 .module-available .asyncpackage .fig-package .fig-js.fig-dep1,
 .module-available.asyncpackage .fig-package .fig-js.fig-dep1 {
 	height: 70px;
-	-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(80px, -20px, 10px);
-	-moz-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(80px, -20px, 10px);
-	-o-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(80px, -20px, 10px);
-	-ms-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(80px, -20px, 10px);
-	transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(80px, -20px, 10px);
+
 }
 
 .module-available .asyncpackage .fig-package .fig-js,
@@ -969,11 +950,8 @@
 .whichpackage .asyncpackage .fig-package {
 	top: 0;
 	background-color: rgba(150,150,150,1);
-	-webkit-transform: rotateX(0deg) rotateZ(0deg) translate(0px, 0px);
-	-moz-transform: rotateX(0deg) rotateZ(0deg) translate(0px, 0px);
-	-o-transform: rotateX(0deg) rotateZ(0deg) translate(0px, 0px);
-	-ms-transform: rotateX(0deg) rotateZ(0deg) translate(0px, 0px);
-	transform: rotateX(0deg) rotateZ(0deg) translate(0px, 0px);
+	-webkit-transform: rotateX(0deg) rotateZ(0deg) translate(15px, 0px);
+	transform: rotateX(0deg) rotateZ(0deg) translate(15px, 0px);
 }
 
 .whichpackage .asyncpackage .fig-package .fig-js {
