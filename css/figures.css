@@ -118,6 +118,8 @@
 	transform: rotateX(60deg) rotateZ(-45deg);
 
 	height: 70px;
+
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .fig-package {
@@ -165,15 +167,23 @@
 }
 
 .separatedfiles.inlinescripts .fig-js {
+
 	top: 0;
-	width: 200px;
+	width: 100px;
 	left: 260px;
 	z-index: 4;
 }
 
 .separatedfiles.inlinescripts .fig-js-inline {
 	z-index: 5;
+	width: 200px;
 }
+
+.organizedcode .separatedfiles.inlinescripts .fig-js,
+.organizedcode.separatedfiles.inlinescripts .fig-js 	{
+	width: 200px;
+}
+
 .organizedcode .separatedfiles.inlinescripts .fig-js-inline,
 .organizedcode.separatedfiles.inlinescripts .fig-js-inline {
 	height: 70px;
@@ -696,6 +706,7 @@
 .waterfall.transdeps .dependencygraph .fig-js.fig-dep6,
 .waterfall.transdeps .dependencygraph .fig-js.fig-module {
 	top: 100%;
+	box-shadow: 0 20px 56px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -1401,10 +1412,11 @@
 .negativeloadingsteptwo .fig-package {
 	height: 295px;
 	width: 200px;
-	top: -90px;
-	left: -90px;
+	top: -80px;
+	left: 80px;
 	z-index: 2;
-	opacity: 0;
+	opacity: 1;
+
 }
 
 .negativeloading .fig-package.fig-pak2 {
@@ -1433,6 +1445,7 @@
 	z-index: 2;
 	display: none;
 	-webkit-transition: all .7s;-moz-transition: all .7s;-ms-transition: all .7s;-o-transition: all .7s;transition: all .7s;
+	font-weight: bold;
 }
 
 .request .negativeloading .font-code.req1 {
@@ -1440,11 +1453,11 @@
 }
 
 
-.negativeloading .fig-js.fig-module1 {top: -80px; width: 140px; }
-.negativeloading .fig-js.fig-dep11 { top: -25px;}
-.negativeloading .fig-js.fig-dep12 { top: 30px;}
-.negativeloading .fig-js.fig-dep13 { top: 85px;}
-.negativeloading .fig-js.fig-dep14 { top: 140px;}
+.negativeloading .fig-js.fig-module1 {top: -70px; width: 140px; }
+.negativeloading .fig-js.fig-dep11 { top: -15px;}
+.negativeloading .fig-js.fig-dep12 { top: 40px;}
+.negativeloading .fig-js.fig-dep13 { top: 95px;}
+.negativeloading .fig-js.fig-dep14 { top: 150px;}
 
 .negativeloading .fig-js.fig-dep11,
 .negativeloading .fig-js.fig-dep12,
@@ -1454,12 +1467,15 @@
 	transition-delay: 800ms;
 }
 
-.negativeloading .fig-package.fig-pak1 {}
+.negativeloading .fig-package.fig-pak1 {
+	-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(-15deg) translate3d(-250px,0,0);
+	transform: rotateX(0deg) rotateZ(0deg) rotateY(-15deg) translate3d(-250px,0,0);
+}
 
 
 
 .pac .negativeloading .fig-js {
-	left: 100px;
+	left: 75px;
 	opacity: 1;
 }
 
@@ -1524,29 +1540,6 @@
 	}
 }
 
-@-webkit-keyframes negLoadPack {
-	20% {
-		opacity: 1;
-		left: 80px;
-		top: -90px;
-	}
-
-	40% {
-		opacity: 1;
-		left: 80px;
-		top: -90px;
-	}
-	90% {
-		opacity: 1;
-		left: 80px;
-		top: 320px;
-	}
-	100% {
-		opacity: 0;
-		left: 80px;
-		top: 420px;
-	}
-}
 
 
 .register.request .negativeloading .font-code.req1 span ,
@@ -1579,6 +1572,7 @@
 .negativeloadingsteptwo .font-code.req1 {
 	left: 390px;
 	top: 280px;
+	font-weight: bold;
 	-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate3d(0,0,60px);
 	transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate3d(0,0,60px);
 }
@@ -1590,9 +1584,9 @@
 
 
 .negativeloadingsteptwo .fig-js.fig-module1 {top: -80px; width: 140px; }
-.negativeloadingsteptwo .fig-js.fig-dep1 { top: -25px;}
-.negativeloadingsteptwo .fig-js.fig-dep2 { top: 30px;}
-.negativeloadingsteptwo .fig-js.fig-dep5 { top: 30px;}
+.negativeloadingsteptwo .fig-js.fig-dep1 { top: -23px;}
+.negativeloadingsteptwo .fig-js.fig-dep2 { top: 31px;}
+.negativeloadingsteptwo .fig-js.fig-dep5 { top: 31px;}
 .negativeloadingsteptwo .fig-js.fig-dep3 { top: 85px;}
 .negativeloadingsteptwo .fig-js.fig-dep4 { top: 140px;}
 .negativeloadingsteptwo .fig-js.fig-dep6 { top: 140px;}
@@ -1608,8 +1602,8 @@
 }
 
 .negativeloadingsteptwo .fig-js.fig-jsreq {
-	-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate3d(0,0,40px);
-	transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate3d(0,0,40px);
+	-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate3d(-46px,0,40px);
+	transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate3d(-46px,0,40px);
 }
 
 .negativeloadingsteptwo .fig-js.fig-module2 {top: -80px; width: 140px; }
@@ -1654,24 +1648,48 @@
 @-webkit-keyframes negLoadPack {
 	20% {
 		opacity: 1;
-		left: 80px;
-		top: -60px;
+		-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(-15deg) translate3d(-20px,-2px,-10px);
+		transform: rotateX(0deg) rotateZ(0deg) rotateY(-15deg) translate3d(-20px,-2px,-10px);
 	}
 
 	40% {
 		opacity: 1;
-		left: 80px;
-		top: -60px;
+		-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(-15deg) translate3d(-20px,-2px,-10px);
+		transform: rotateX(0deg) rotateZ(0deg) rotateY(-15deg) translate3d(-20px,-2px,-10px);
 	}
 	90% {
 		opacity: 1;
-		left: 80px;
-		top: 320px;
+		-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(-15deg) translate3d(-20px,410px,-10px);
+		transform: rotateX(0deg) rotateZ(0deg) rotateY(-15deg) translate3d(-20px,410px,-10px);
 	}
 	100% {
 		opacity: 0;
-		left: 80px;
-		top: 420px;
+		-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(-15deg) translate3d(-20px,410px,-10px);
+		transform: rotateX(0deg) rotateZ(0deg) rotateY(-15deg) translate3d(-20px,410px,-10px);
+	}
+}
+
+@-webkit-keyframes negLoadPack2 {
+	20% {
+		opacity: 1;
+		-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate3d(0px,30px,26px);
+		transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate3d(0px,30px,26px);
+	}
+
+	40% {
+		opacity: 1;
+		-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate3d(0px,30px,26px);
+		transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate3d(0px,30px,26px);
+	}
+	90% {
+		opacity: 1;
+		-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate3d(0px,400px,26px);
+		transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate3d(0px,400px,26px);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate3d(0px,410px,26px);
+		transform: rotateX(0deg) rotateZ(0deg) rotateY(15deg) translate3d(0px,410px,26px);
 	}
 }
 
@@ -1748,7 +1766,7 @@
 }
 
 .serve .negativeloadingsteptwo .fig-package.fig-pak2 {
-	-webkit-animation: negLoadPack 2s forwards;
+	-webkit-animation: negLoadPack2 2s forwards;
 }
 
 
