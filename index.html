@@ -69,7 +69,7 @@
 
                 <section data-bottom-title="Loading JavaScript">
 
-					<h2>Loading JavaScript</h2>
+					<h2>A JavaScript betöltése</h2>
 
                     <aside class="notes">
 
@@ -98,13 +98,13 @@
                     </div>
 
                     <div class="part-side">
-                        <h3>Inline scripting</h3>
+                        <h3>Inline script</h3>
 
                         <ul class="fragment" data-figure="inlinescripts">
-                            <li>Quick sandboxing</li>
-                            <li>Small demos</li>
-                            <li>Learning</li>
-                            <li>Testing</li>
+                            <li>Gyors kísérletek</li>
+                            <li>Megosztható példák</li>
+                            <li>Tanulás</li>
+                            <li>Tesztelés</li>
                         </ul>
                     </div>
 
@@ -148,12 +148,12 @@
 
 
                     <div class="part-side">
-                        <h3>JavaScript files</h3>
+                        <h3>JavaScript állományok</h3>
 
                         <ul class="fragment" data-figure="separatedfiles">
-                            <li>Separate code from markup</li>
-                            <li>Step toward modules</li>
-                            <li>Serve JS as an asset</li>
+                            <li>Kód elválasztása a tartalomtól</li>
+                            <li>Modularizálás</li>
+                            <li>JS egy távoli szerveren</li>
                         </ul>
                     </div>
 
@@ -195,12 +195,12 @@
                     </div>
 
                     <div class="part-side">
-                        <h3>Code organization</h3>
+                        <h3>Kódszervezés</h3>
 
                         <ul class="fragment" data-figure="organizedcode">
-                            <li>Functions, Classes, Modules</li>
-                            <li>Codebase growth</li>
-                            <li>Loading becomes an issue</li>
+                            <li>Funkciók, Osztályok, Modulok</li>
+                            <li>Növekvő kódbázis</li>
+                            <li>Betölteni mindezt lassan problémás lesz</li>
                         </ul>
                     </div>
 
@@ -247,7 +247,7 @@
 
                 <section data-bottom-title="Packaging JavaScript">
 
-                    <h2>Packaging JavaScript</h2>
+                    <h2>JavaScript csomagolás</h2>
 
 
 
@@ -274,12 +274,12 @@
                     </div>
 
                     <div class="part-side">
-                        <h3>Packages</h3>
+                        <h3>Csomagolás</h3>
 
                         <ul class="fragment" data-figure="packagedcode">
-                            <li>Single file</li>
-                            <li>Less HTTP requests</li>
-                            <li>Compressing</li>
+                            <li>Egy file</li>
+                            <li>Kevesebb HTTP kérés</li>
+                            <li>Tömörítés</li>
                         </ul>
                     </div>
 
@@ -315,12 +315,11 @@
                     </div>
 
                     <div class="part-side">
-                        <h3>Partitioned Packages</h3>
+                        <h3>Particionált Csomagok</h3>
 
                         <ul class="fragment" data-figure="partitionedpacks">
-                            <li>Packs for Features</li>
-                            <li>Few more HTTP rqs</li>
-                            <li>JS packs according to features</li>
+                            <li>Kevesebb HTTP kérés</li>
+                            <li>Aloldalak, mini-alkalmazások</li>
                         </ul>
                     </div>
 
@@ -358,11 +357,11 @@
                     </div>
 
                     <div class="part-side">
-                        <h3>Overlapping Dependencies</h3>
+                        <h3>Átfedő függőségek</h3>
 
                         <ul class="fragment" data-figure="overlappingdeps">
-                            <li>common components</li>
-                            <li>redundant code</li>
+                            <li>közös komponensek</li>
+                            <li>redundáns kód</li>
                         </ul>
                     </div>
 
@@ -407,15 +406,15 @@
                     </div>
 
                     <div class="part-side">
-                        <h3>"Common Pitfall"</h3>
+                        <h3>A "közös" hiba</h3>
 
                         <p class="fragment" data-figure="commonpack">
-                            Put common code in a common package
+                            Többször, közösen használt kódot tegyük egy közös csomagba
                         </p>
 
 
                         <p class="fragment" data-figure="hugecommonpack">
-                            Slowly leads to one, <br /> huge package
+                            Ez assan egy hatalmas csomaghoz vezet
                         </p>
 
                     </div>
@@ -453,7 +452,7 @@
 
                 <section data-bottom-title="Handling Dependencies">
 
-                    <h2>Handling Dependencies</h2>
+                    <h2>Függőség Kezelés</h2>
 
 
                     <aside class="notes">
@@ -469,7 +468,7 @@
                 </section>
                 <section data-bottom-title="Handling Dependencies">
 
-                    <h3>Modules</h3>
+                    <h3>Modul rendszerek</h3>
 
 
                     <div class="part-onethird fragment" data-fragment-index="1">
@@ -553,12 +552,11 @@
                 </section>
                 <section data-bottom-title="Handling Dependencies">
 
-                    <h3>Module Loaders</h3>
+                    <h3>Modul Kezelők</h3>
 
-
-                    <h4>Register</h4>
-                    <h4>Connect</h4>
-                    <h4>Fetch</h4>
+                    <h4>Regisztrál</h4>
+                    <h4>Összekapcsol</h4>
+                    <h4>Letölt</h4>
 
                     <p class="fragment"><em>requirejs, curljs</em></p>
 
@@ -595,7 +593,7 @@
                 <section data-bottom-title="Async Loading">
 
 
-                    <h2>Asynchronous Loading</h2>
+                    <h2>Aszinkron Letöltés</h2>
 
 
                     <aside class="notes">
@@ -628,14 +626,14 @@
                     </div>
 
                     <div class="part-side">
-                        <h3>Async Module Loading</h3>
+                        <h3>Aszinkron Modul Letöltés</h3>
 
                         <ul>
                             <li class="fragment" data-figure="do-require">Require</li>
-                            <li class="fragment" data-figure="fetch-module">Fetch Modules</li>
-                            <li class="fragment" data-figure="has-deps">AMD references dependencies</li>
-                            <li class="fragment" data-figure="wait-deps">Wait for deps</li>
-                            <li class="fragment" data-figure="module-available">Module available</li>
+                            <li class="fragment" data-figure="fetch-module">Modul letöltése</li>
+                            <li class="fragment" data-figure="has-deps">Függőségek</li>
+                            <li class="fragment" data-figure="wait-deps">Függőségek letöltése</li>
+                            <li class="fragment" data-figure="module-available">A Modul elérhető</li>
                         </ul>
                     </div>
 
@@ -663,11 +661,11 @@
 
 
                     <div class="part-side">
-                        <h3>Dependency Graph</h3>
+                        <h3>Függőségi Gráf</h3>
 
                         <ul class="fragment" data-figure="dep-graph">
-                            <li>Codebase defined</li>
-                            <li>Not Feature deined</li>
+                            <li>A kódbázis definiálja,</li>
+                            <li>nem a termék vagy weboldal</li>
 
                         </ul>
                     </div>
@@ -742,11 +740,11 @@
                     </div>
 
                     <div class="part-side">
-                        <h3>Downside</h3>
+                        <h3>A sötét oldal</h3>
 
                         <ul>
-                            <li class="fragment" data-figure="transdeps">Transitive dependencies</li>
-                            <li class="fragment" data-figure="waterfall">Waterfall of requests</li>
+                            <li class="fragment" data-figure="transdeps">Tranzitív függőségek</li>
+                            <li class="fragment" data-figure="waterfall">HTTP kérések zuhataga</li>
 
                         </ul>
                     </div>
@@ -786,7 +784,7 @@
 
                 <section data-bottom-title="Async Packages">
 
-                    <h2>Async Packages</h2>
+                    <h2>Aszinkron Csomagok</h2>
 
 
                     <aside class="notes">
@@ -818,12 +816,12 @@
                     </div>
 
                     <div class="part-side">
-                        <h3>Async Packages</h3>
+                        <h3>Aszinkron Csomagok</h3>
 
                         <ul>
                             <li class="fragment" data-figure="do-require">Require</li>
-                            <li class="fragment" data-figure="fetch-module">Fetch Package</li>
-                            <li class="fragment" data-figure="module-available">Module available</li>
+                            <li class="fragment" data-figure="fetch-module">Csomag letöltése</li>
+                            <li class="fragment" data-figure="module-available">A modul elérhető</li>
                         </ul>
                     </div>
 
@@ -861,10 +859,10 @@
                     </div>
 
                     <div class="part-side">
-                        <h3>Downside</h3>
+                        <h3>Hol a hiba?</h3>
 
                         <ul>
-                            <li class="fragment" data-figure="whichpackage">Which package?</li>
+                            <li class="fragment" data-figure="whichpackage">Melyik csomagot?</li>
                         </ul>
                     </div>
 
@@ -892,7 +890,7 @@
 
                 <section data-bottom-title="Walking in circles?">
 
-                    <h2>Walking in circles?</h2>
+                    <h2>Ugyanazokat a köröket futjuk, újra és újra?</h2>
 
 
                     <aside class="notes">
@@ -925,7 +923,7 @@
 
                 <section data-bottom-title="Negative Loading">
 
-                    <h2>Negative Loading</h2>
+                    <h2>A Negatív Letöltés</h2>
 
 
                     <aside class="notes">
@@ -961,13 +959,13 @@
 
 
                     <div class="part-side">
-                        <h3>First Request</h3>
+                        <h3>Az első kérés</h3>
 
                         <ul>
-                            <li class="fragment" data-figure="request">Module Request</li>
-                            <li class="fragment" data-figure="pac">Pack all dependencies</li>
-                            <li class="fragment" data-figure="serve">Serve</li>
-                            <li class="fragment" data-figure="register">Register requested modules</li>
+                            <li class="fragment" data-figure="request">Kérés</li>
+                            <li class="fragment" data-figure="pac">Függőségek csomagolása</li>
+                            <li class="fragment" data-figure="serve">Kiszolgálás</li>
+                            <li class="fragment" data-figure="register">A kért modulok regisztrálása</li>
                         </ul>
                     </div>
 
@@ -1051,14 +1049,14 @@
                     </div>
 
                     <div class="part-side">
-                        <h3>Subsequent Requests</h3>
+                        <h3>További kérések</h3>
 
                         <ul>
-                            <li class="fragment" data-figure="subtract">Require</li>
-                            <li class="fragment" data-figure="find">Find dependencies</li>
-                            <li class="fragment" data-figure="diff">Subtract</li>
-                            <li class="fragment" data-figure="serve">Serve</li>
-                            <li class="fragment" data-figure="register">Register requested modules</li>
+                            <li class="fragment" data-figure="subtract">Kérés</li>
+                            <li class="fragment" data-figure="find">Dependenciák összegyűjtése</li>
+                            <li class="fragment" data-figure="diff">Kivonás</li>
+                            <li class="fragment" data-figure="serve">Kiszolgálás</li>
+                            <li class="fragment" data-figure="register">A kért modulok regisztrálása</li>
                         </ul>
                     </div>
 
@@ -1091,9 +1089,9 @@
                 </section>
                 <section data-bottom-title="Negative Loading">
 
-                    <h2>JavaScript is not a static asset anymore</h2>
+                    <h2>A JavaScript többé nem egy statikus file valami szerveren</h2>
 
-                    <h4>Dependency Handling on the Server</h4>
+                    <h4>A függőség kezelés, feloldás a szerveren történik</h4>
 
 
 
