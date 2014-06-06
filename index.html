@@ -1696,7 +1696,7 @@
                     <h3>Egyedi URL-ek</h3>
 
 
-                    <p class="font-code"> / repository / <strong>version</strong> /  + modules - modules ? extra-params</p>
+                    <p class="font-code"> / kódbázis / <strong>verzió</strong> /  + modulok - modulok</p>
 
                     <p><br/><br/>Nagyon rossz</p>
 
@@ -1709,11 +1709,11 @@
 
                 <section data-bottom-title="Cache & Versioning">
 
-                    <h3>Unique URLs</h3>
+                    <h3>Egyedi URL-ek</h3>
 
-                    <p class="font-code"> / repository /  + modules - modules ? extra-params</p>
+                    <p class="font-code"> / kódbázis /  + modulok - modulok</p>
 
-                    <p><br/><br/>Module names has to contain version information </p>
+                    <p><br/><br/>A modul neveknek kell hordozniuk a verzió információt</p>
 
                     <aside class="notes">
                         JMS currently serves javascript modules with a unique url
@@ -1732,17 +1732,17 @@
 
                 <section data-bottom-title="Cache & Versioning">
 
-                    <h3>Mtime hashed module names</h3>
+                    <h3>A módosítás idejével vegyített modulnevek</h3>
 
                     <h4 class="fragment" data-fragment-index="1">apps/Main + 2014-04-29T11:49:22.000Z</h4>
                     <h4 class="fragment" data-fragment-index="2">2413570658</h4>
                     <h4 class="fragment" data-fragment-index="3">8fdc2a62</h4>
 
                     <ul>
-                        <li class="fragment" data-fragment-index="1">Modulename + modification time</li>
-                        <li class="fragment" data-fragment-index="2">CRC checksum </li>
-                        <li class="fragment" data-fragment-index="3">represented in hexa</li>
-                        <li class="fragment" data-fragment-index="4">replaced at <strong>every</strong> usage</li>
+                        <li class="fragment" data-fragment-index="1">Modul név + Módosítás ideje</li>
+                        <li class="fragment" data-fragment-index="2">CRC összeg </li>
+                        <li class="fragment" data-fragment-index="3">hexadecimálisan</li>
+                        <li class="fragment" data-fragment-index="4">lecserélve <strong>minden</strong> használati helyen</li>
                     </ul>
 
                     <aside class="notes">
@@ -1753,15 +1753,13 @@
 
                 <section data-bottom-title="Cache & Versioning" class="dep-graph">
 
-
-
                     <div class="part-side">
-                        <h3>Changed dependency paths</h3>
+                        <h3>Megváltozott függőségi útvonalak</h3>
 
                         <ul>
-                            <li class="fragment" data-figure="changes">Module changes</li>
-                            <li class="fragment" data-figure="propagate">Propagates up the dependency graph</li>
-                            <li class="fragment" data-figure="affected">Affected modules only</li>
+                            <li class="fragment" data-figure="changes">Egy modul megváltozik</li>
+                            <li class="fragment" data-figure="propagate">A változása végigcsorog a függőségi gráfon</li>
+                            <li class="fragment" data-figure="affected">Csak az érintett modulok</li>
                         </ul>
                     </div>
 
@@ -1834,14 +1832,14 @@
                     </div>
 
                     <div class="part-side">
-                        <h3>Version Handling</h3>
+                        <h3>Verzió Kezelés</h3>
 
                         <ul >
 
-                            <li class="fragment" data-figure="loadv42">Cliend Init</li>
-                            <li class="fragment" data-figure="bound">Bound to Version</li>
-                            <li class="fragment" data-figure="deploy">Deploy</li>
-                            <li class="fragment" data-figure="remain">Client keeps version</li>
+                            <li class="fragment" data-figure="loadv42">Kliens indul</li>
+                            <li class="fragment" data-figure="bound">Verzióhoz kötve</li>
+                            <li class="fragment" data-figure="deploy">Új kód élesedik</li>
+                            <li class="fragment" data-figure="remain">A kliens marad a megkezdett verziónál</li>
 
                         </ul>
                     </div>
@@ -1874,9 +1872,9 @@
 
                 <section data-bottom-title="Cache & Versioning">
 
-                    <h3>Support Re-Validation</h3>
+                    <h3>Re-Validation</h3>
 
-                    <h4>Internal Cache <br /><em>(mostly to save CPU)</em></h4>
+                    <h4>Belső cache <br /><em>(főleg CPU idő spórolásra)</em></h4>
 
 
                     <aside class="notes">
@@ -1914,7 +1912,7 @@
 
                 <section data-bottom-title="Scale">
 
-                    <h2>Scale</h2>
+                    <h2>Skálázhatóság</h2>
 
 
                     <aside class="notes">
@@ -1929,7 +1927,7 @@
 
                 <section data-bottom-title="Scale">
 
-                    <h4>Scale</h4>
+                    <h4>Skálázhatóság</h4>
 
 
                     <div class="figures scaling">
@@ -2004,7 +2002,7 @@
 
                 <section data-bottom-title="Plugins">
 
-                    <h2>Plugins</h2>
+                    <h2>Pluginek</h2>
 
                     <aside class="notes">
 
@@ -2020,13 +2018,13 @@
 
                 <section data-bottom-title="Plugins">
 
-                    <h4>Plugins</h4>
+                    <h4>Pluginek</h4>
 
                     <div class="part-left">
-                        <h3>Deploy</h3>
+                        <h3>Élesítés</h3>
                     </div>
                     <div class="part-right">
-                        <h3>Serve</h3>
+                        <h3>Kiszolgálás</h3>
                     </div>
 
                     <aside class="notes">
@@ -2057,10 +2055,10 @@
 
                         </div>
 
-                        <h3>Deploy Plugins</h3>
+                        <h3>Pluginek Élesítéshez</h3>
 
                         <p>
-                            Access all the codebase,<br /> do the heavy work
+                            A teljes kódbázishoz hozzáfér,<br /> ők végzik a nehéz munkát
                         </p>
                     </div>
 
@@ -2073,7 +2071,7 @@
 
                         <ul class="fragment">
                             <li>jslint / jshint</li>
-                            <li>code compression</li>
+                            <li>kód tömörítés</li>
                             <li>transpile/generate</li>
                         </ul>
                     </div>
@@ -2119,13 +2117,13 @@
 
                         </div>
 
-                        <h3>Server Plugins</h3>
+                        <h3>Pluginek Kiszolgáláshoz</h3>
 
                         <p>
-                            Access the client request
+                            Hozzáfér a kliens kéréshez
                         </p>
                         <p>
-                            Modify the modules to be served
+                            A kérés alapján elkészített modul csomagot módosíthatja
                         </p>
 
                     </div>
@@ -2179,7 +2177,7 @@
                     </div>
 
                     <p>
-                        Order plugins, can rely on each other
+                        Plugin sorrend, függhetnek egymás kimenetétől
                     </p>
 
 
@@ -2209,13 +2207,13 @@
 
                     <div class="part-main">
 
-                        <h3>Plugin development</h3>
+                        <h3>Plugin fejlesztés</h3>
 
-                        <p>Simple Node.js Streams v2 interface</p>
+                        <p>Egyszerű Node.js Streams v2 interface</p>
 
-                        <p>Every plugin is a Transform stream</p>
+                        <p>Minden plugin egy Transform stream példány</p>
 
-                        <p>Interface + Flow Control</p>
+                        <p>Interface + Futásvezérlés</p>
                     </div>
 
 
@@ -2244,7 +2242,7 @@
 
                 <section data-bottom-title="Monitoring">
 
-                    <h2>Monitoring</h2>
+                    <h2>Monitorozás</h2>
 
                     <p>Processes, <br />concurrent requests,<br /> requests per second<br /> ... </p>
 
