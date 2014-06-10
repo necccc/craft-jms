@@ -4,6 +4,28 @@
 	background-size: 16px 16px;
 }
 
+.reveal a.link-github {
+	color: #000;
+}
+
+h2.main-title {
+	margin-top: -200px;
+}
+
+.svg.openacademy {
+	position: absolute;
+	left: 50%;
+	width: 400px;
+	margin-left: -200px;
+}
+
+.svg.ustream {
+	position: absolute;
+	left: 50%;
+	width: 400px;
+	margin-left: -200px;
+}
+
 .code-keyword {
 	color: #539eec;
 }
@@ -94,9 +116,6 @@
 	height: 380px;
 
 	-webkit-transform: rotateX(60deg) rotateZ(-45deg);
-	-moz-transform: rotateX(60deg) rotateZ(-45deg);
-	-o-transform: rotateX(60deg) rotateZ(-45deg);
-	-ms-transform: rotateX(60deg) rotateZ(-45deg);
 	transform: rotateX(60deg) rotateZ(-45deg);
 
 	left: 0;
@@ -2154,6 +2173,7 @@
 	-webkit-transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(0,0,0);
 	transform: rotateX(0deg) rotateZ(0deg) rotateY(0deg) translate3d(0,0,0);
 	margin-left: -50px;
+	top: 150px;
 }
 
 .repos .fig.fig-server {
@@ -2172,6 +2192,7 @@
 	right: auto;
 	padding: 0;
 	line-height: 51px;
+	color: #fff;
 }
 
 .repos .fig.fig-redis {
@@ -2193,7 +2214,38 @@
 	margin-top: -15px;
 }
 
+.repos .repo-url {
+	position: absolute;
+	top: -250px;
+	width: 100px;
+	margin-left: -50px;
+}
+
+
+.repos .arrow {
+	position: absolute;
+	top: -10px;
+	width: 300px;
+	margin-left: -165px;
+	-webkit-transform: rotateZ(-90deg);
+	transform: rotateZ(-90deg);
+
+	-webkit-transform-origin: center top;
+	transform-origin: center top;
+
+}
 
 .repos .repo1 {	left: 10%; }
 .repos .repo2 {	left: 50%; }
 .repos .repo3 {	left: 90%; }
+
+.repos .line {
+	position: absolute;
+	width: 1px;
+	height: 590px;
+	top: -280px;
+	background: rgba(0,0,0,.2);
+}
+
+.repos .repo12 { left: 30%; }
+.repos .repo23 { left: 71%; }
